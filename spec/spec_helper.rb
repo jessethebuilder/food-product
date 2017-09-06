@@ -3,7 +3,7 @@ require 'capybara/poltergeist'
 require 'factory_girl_rails'
 Capybara.javascript_driver = :poltergeist
 
-require 'support/features_helper'
+# require 'support/features_helper'
 
 require 'mongoid-rspec'
 
@@ -13,7 +13,7 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = [:should, :expect]
   end
-  
+
   config.include FactoryGirl::Syntax::Methods
 
   # config.use_transactional_fixtures = false

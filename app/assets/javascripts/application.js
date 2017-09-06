@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require turbolinks
+//= require vendor/underscore-min.js
+//= require vendor/backbone-min.js
+
+//= require utilities.js
+
+//= require anysoft_products.js
+
+_.templateSettings = {
+  interpolate: /\{\{(.+?)\}\}/g
+};

@@ -35,6 +35,7 @@ group :development do
 end
 
 group :test do
+  gem 'mongoid-rspec'
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'guard-rspec'

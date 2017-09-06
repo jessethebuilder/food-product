@@ -1,0 +1,33 @@
+$menu_font_family: 'Montserrat', sans-serif;
+
+$nav_bg: rgba(0,0,0,0.85);
+$nav_color: #ddd;
+$nav_disabled_color: #666666;
+$nav_hover_color: #666666;
+$nav_hover_bg: #fff;
+
+.wide_nav{
+  background-color: $nav_bg;
+  color: $nav_color;
+  margin-bottom: 20px;
+  .nav_item{
+    font-family: $menu_font_family;
+    font-size: 20px;
+    width: 100%;
+    text-align:center;
+  }
+
+  .nav_item:hover{
+    cursor: pointer;
+    background-color: $nav_hover_bg;
+    color: $nav_hover_color;
+  }
+
+  .nav_item.disabled{
+    color: $nav_disabled_color;
+  }
+  .nav_item.disabled:hover{
+    cursor: default;
+    background-color: transparent;
+  }
+}
